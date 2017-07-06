@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+  test-test:
+    image: gcc:4.9
+    container_name: test-test
+    command: /usr/local/src/test/docker/run-app.sh
+    volumes:
+      - ../../:/usr/local/src/test
